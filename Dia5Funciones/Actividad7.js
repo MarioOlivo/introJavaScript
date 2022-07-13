@@ -62,3 +62,12 @@ function Multiply(number) {
 }
 var f = Multiply(10);
 console.log(f);
+
+
+function multiplicar(valor1,valor2){
+  var producto= valor1*(valor2== undefined?valor1:valor2)
+
+  return producto
+}
+
+console.log(multiplicar(3));
