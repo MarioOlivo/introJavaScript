@@ -46,3 +46,19 @@ function convertirTemperatura(temperatura,atipo){
 
    return mensaje
 }
+
+
+/// Ejercicio 7
+
+
+function Multiply(number) {
+  var fibonacci = [];
+  fibonacci[0] = 0;
+  fibonacci[1] = 1;
+  for (var i = 2; i < number; i++) {
+      fibonacci[i] = fibonacci[i - 2] + fibonacci[i - 1];
+  }
+  return fibonacci;
+}
+var f = Multiply(10);
+console.log(f);
