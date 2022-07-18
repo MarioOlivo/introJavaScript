@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head><h1>Calculadora</h1></head>
+    <div class="container">
+        <div class="arriba">
+            <div class="result" >
+                <span id="resultado"></span>
+                
+            </div>  
+            <input type="button" class="AC" id="ac" value="AC" onclick="limpiatodo()">
+        </div>
+        <div class="botones">
+            <div class="btns1">
+                <input class="operadores" id="siete" type="button" value="7" onclick="agreganumero('7')">
+                <input class="operadores" id="cuatro" type="button" value="4" onclick="agreganumero('4')">
+                <input class="operadores" id="uno" type="button" value="1" onclick="agreganumero('1')">
+                <input class="operadores" id="cero" type="button" value="0" onclick="agreganumero('0')">
+            </div>
+            <div class="btns2">
+                <input class="operadores" id="ocho" type="button" value="8"onclick="agreganumero('8')">
+                <input class="operadores" id="cinco" type="button" value="5" onclick="agreganumero('5')">
+                <input class="operadores" id="dos" type="button" value="2" onclick="agreganumero('2')">
+                <input class="operadores" id="punto" type="button" value="." onclick="agreganumero('.')">
+            </div>
+            <div class="btns3">
+                <input class="operadores" id="nueve" type="button" value="9" onclick="agreganumero('9')">
+                <input class="operadores" id="seis" type="button" value="6" onclick="agreganumero('6')">
+                <input class="operadores" id="tres" type="button" value="3" onclick="agreganumero('3')">
+                <input class="operadores" id="igual" type="button" value="=" onclick="operar()">
+            </div>
+            <div class="btns4">
+                <input class="operadores" id="division" type="button" value="/" onclick="validacion(4)">
+                <input class="operadores" id="multiplicar" type="button" value="*" onclick="validacion(3)">
+                <input class="operadores" id="suma" type="button" value="+" onclick="validacion(1)">
+                <input class="operadores" id="resta" type="button" value="-" onclick="validacion(2)">
+                
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
